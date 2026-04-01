@@ -2,7 +2,7 @@ import "./Resume.css";
 import { useState, useEffect } from "react";
 
 const Resume = () => {
-    
+
   const text = "resume.exe";
   const [displayText, setDisplayText] = useState("");
   const [isHover, setIsHover] = useState(false);
@@ -11,21 +11,19 @@ const Resume = () => {
     const interval = setInterval(() => {
         setDisplayText((prev) => {
 
-            // 👉 typing forward
             if (isHover && prev.length < text.length) {
                 return text.slice(0, prev.length + 1);
             }
 
-            // 👉 deleting backward
             if (!isHover && prev.length > 0) {
                 return prev.slice(0, -1);
             }
 
-            return prev; // stop when done
+            return prev;
 
         });
 
-    }, isHover ? 80 : 50); // speed changes automatically
+    }, isHover ? 80 : 50);
 
     return () => clearInterval(interval);
 
