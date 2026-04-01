@@ -55,28 +55,3 @@ const Resume = () => {
 };
 
 export default Resume;
-
-
-
-
-
-// import "./Resume.css"
-
-// const Resume = () => {
-//   return (
-//     <>
-//         <div className="resume">
-//             <div className="resumeContainer">
-//                 <div className="resumeBtn">
-//                     &gt; <span className="resumeText">resume.exe</span>_
-//                 </div>
-//                 {/* <div className="resumeText">
-//                     &gt; resume.exe _
-//                 </div> */}
-//             </div>
-//         </div>
-//     </>
-//   )
-// }
-
-// export default Resume
