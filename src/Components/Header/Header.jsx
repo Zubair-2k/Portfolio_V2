@@ -48,7 +48,7 @@ const Header = () => {
         behavior: "smooth"
     });
 
-    window.history.replaceState(null,null,`${sid}`);
+    window.location.hash = `/${sid}`;
   }
 
   const handleDownload = () => {
@@ -94,9 +94,9 @@ const Header = () => {
                     console.log(capId);
 
                     if (capId === "Projectsheader" || capId === "Projects") {
-                      window.history.replaceState(null, null, "#/Projects");
+                      window.location.hash = "/Projects";
                     } else {
-                      window.history.replaceState(null, null, `#/${capId}`);
+                      window.location.hash = `/${capId}`;
                     }
 
                 }
@@ -164,7 +164,7 @@ const Header = () => {
         duration: 0.8,
       })
 
-      tl1.current.fromTo(".headerSideNavbarItems a",{
+      tl1.current.fromTo(".headerSideNavbarItems span",{
         x:80,
         opacity:0,
       },{
@@ -413,17 +413,17 @@ const Header = () => {
 
             <div className="headerSideNavbarItems" ref={headerSideNavbarItemsRef}>
 
-              <a 
-              onClick={(e)=> handleNavClick(e,"About")}>About</a>
+              <span 
+              onClick={(e)=> handleNavClick(e,"About")}>About</span>
 
-              <a 
-              onClick={(e)=> handleNavClick(e,"projectsHeader")}>Projects</a>
+              <span 
+              onClick={(e)=> handleNavClick(e,"projectsHeader")}>Projects</span>
 
-              <a 
-              onClick={(e)=> handleNavClick(e,"Experiences")}>Experience</a>
+              <span 
+              onClick={(e)=> handleNavClick(e,"Experiences")}>Experience</span>
 
-              <a 
-              onClick={(e)=> handleNavClick(e,"Contact")}>Contact</a>
+              <span 
+              onClick={(e)=> handleNavClick(e,"Contact")}>Contact</span>
             
             </div>
 

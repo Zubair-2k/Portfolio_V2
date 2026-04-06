@@ -179,7 +179,7 @@
     gap: 30px;
 }
 
-.headerSideNavbarItems a{
+.headerSideNavbarItems span{
     /* font-family: "Goldman", sans-serif; */
     font-size: 50px;
     font-weight: 700;
@@ -193,7 +193,7 @@
     opacity: 1;
 }
 
-.headerSideNavbarItems a:hover{
+.headerSideNavbarItems span:hover{
     background-color: black;
     color: rgb(255, 98, 0);
 }

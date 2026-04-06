@@ -20,7 +20,7 @@ const Footer = () => {
             behavior: "smooth"
         });
 
-        window.history.replaceState(null,null,`#/${sid}`);
+        window.location.hash = `/${sid}`;
     }
 
     useGSAP(()=>{
