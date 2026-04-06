@@ -94,9 +94,9 @@ const Header = () => {
                     console.log(capId);
 
                     if (capId === "Projectsheader" || capId === "Projects") {
-                      window.history.replaceState(null, null, "Projects");
+                      window.history.replaceState(null, null, "#/Projects");
                     } else {
-                      window.history.replaceState(null, null, `${capId}`);
+                      window.history.replaceState(null, null, `#/${capId}`);
                     }
 
                 }
