@@ -74,7 +74,7 @@ const Contact = () => {
     };
 
     useGSAP(()=>{
-        if(isMobile) return;
+        // if(isMobile) return;
 
         const ctx = gsap.context(()=>{
 

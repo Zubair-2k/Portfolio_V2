@@ -12,7 +12,7 @@ const About = () => {
 
     useGSAP(()=>{
 
-        if(isMobile) return;
+        // if(isMobile) return;
 
         const ctx = gsap.context(()=>{
 
