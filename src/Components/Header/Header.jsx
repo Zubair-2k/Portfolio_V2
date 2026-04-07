@@ -352,7 +352,7 @@ const Header = () => {
   
             </div>
 
-            <a href="/Zubair_A-Resume.pdf" download="Zubair_A_Resume.pdf" className="resumeIcon">
+            <a href={`${import.meta.env.BASE_URL}Zubair_A-Resume.pdf`} download="Zubair_A_Resume.pdf" className="resumeIcon">
               &gt; resume.exe <span className="cursorResume"> _</span>
             </a>
 
