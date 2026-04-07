@@ -14,7 +14,7 @@ const Projects = () => {
     useLayoutEffect(() => {
 
         const handleMove = (e) => {
-            // if(isMobile) return;
+            if(isMobile) return;
 
             const container = projectsContainerRef.current;
             const rect = container.getBoundingClientRect();
@@ -42,7 +42,7 @@ const Projects = () => {
 
     useGSAP(()=>{
 
-        // if(isMobile) return;
+        if(isMobile) return;
 
         const ctx = gsap.context(()=>{
             
@@ -89,7 +89,7 @@ const Projects = () => {
 
     const handleMouseEnter = (img) => {
 
-        // if(isMobile) return;
+        if(isMobile) return;
 
         previewRef.current.querySelector("img").src = img;
 
@@ -102,8 +102,8 @@ const Projects = () => {
     }
 
     const handleMouseLeave = () => {
-        // if(isMobile) return;
-
+        if(isMobile) return;
+        
         gsap.to(previewRef.current,{
             opacity:0,
             scale:0.85,

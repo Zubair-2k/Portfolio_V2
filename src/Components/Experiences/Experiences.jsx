@@ -40,7 +40,7 @@ const Experiences = () => {
             repeat: -1
         });
 
-        // if(isMobile) return;
+        if(isMobile) return;
 
         const tl1 = gsap.timeline({
             scrollTrigger:{
